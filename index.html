@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion de Pedidos</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gestion de Pedidos</h1>
+    <p id="resumen"></p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Nuevo pedido</h2>
+      <form id="form-pedido">
+        <input type="text" id="cliente" placeholder="Cliente" required>
+        <input type="text" id="producto" placeholder="Producto" required>
+        <input type="number" id="cantidad" placeholder="Cantidad" min="1" required>
+        <input type="number" id="precio" placeholder="Precio unitario" min="0" step="0.01" required>
+        <button type="submit">Agregar</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="barra">
+        <h2>Pedidos</h2>
+        <select id="filtro">
+          <option value="Todos">Todos</option>
+          <option value="Pendiente">Pendiente</option>
+          <option value="En proceso">En proceso</option>
+          <option value="Entregado">Entregado</option>
+        </select>
+      </div>
+      <table>
+        <thead>
+          <tr><th>#</th><th>Cliente</th><th>Producto</th><th>Cant.</th><th>Total</th><th>Estado</th><th></th></tr>
+        </thead>
+        <tbody id="tabla"></tbody>
+      </table>
+      <p id="vacio" class="vacio">No hay pedidos.</p>
+    </section>
+  </main>
+
+  <script src="src/pedidos.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>

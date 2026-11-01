@@ -1,0 +1,9 @@
+{
+  "name": "gestion-pedidos",
+  "version": "1.0.0",
+  "description": "App simple de gestion de pedidos (HTML, CSS, JS) para practicar Jenkins",
+  "scripts": {
+    "test": "node --test",
+    "test:ci": "node --test --test-reporter=junit --test-reporter-destination=test-results.xml"
+  }
+}

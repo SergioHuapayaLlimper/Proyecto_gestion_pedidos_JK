@@ -1,0 +1,20 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; background: #f3f4f6; color: #1f2937; }
+header { background: #1f2937; color: #fff; padding: 16px 24px; }
+header h1 { margin: 0; font-size: 1.4rem; }
+header p { margin: 4px 0 0; font-size: .9rem; color: #d1d5db; }
+main { max-width: 900px; margin: 24px auto; padding: 0 16px; display: grid; gap: 16px; }
+.card { background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.card h2 { margin: 0 0 12px; font-size: 1.1rem; }
+form { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+input, select, button { padding: 8px; font-size: .95rem; border: 1px solid #d1d5db; border-radius: 6px; }
+button { background: #2563eb; color: #fff; border: none; cursor: pointer; }
+button:hover { background: #1d4ed8; }
+button.borrar { background: #dc2626; padding: 4px 8px; }
+.barra { display: flex; justify-content: space-between; align-items: center; }
+table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid #e5e7eb; font-size: .9rem; }
+.vacio { color: #6b7280; text-align: center; }
+.estado-Pendiente { color: #b45309; font-weight: bold; }
+.estado-En { color: #1d4ed8; font-weight: bold; }
+.estado-Entregado { color: #15803d; font-weight: bold; }
